@@ -13,7 +13,7 @@ $(function(){
         $(".hot-parent-node").append(
 `<div class="hot col-lg-4 col-md-6">
     <div>
-      <a href="${element.alt}"><img src="${element.images.medium}"/></a>
+      <a href="${element.alt}"><img src="${element.images.medium}" referrerpolicy ="never"/></a>
     </div>
     <div>
       <h1>${element.title}</h1>
@@ -52,7 +52,7 @@ function getMovies(){
         $(".top250-parent-node").append(
 `<div class="hot col-lg-4 col-md-6">
     <div>
-      <a href="${element.alt}"><img src="${element.images.medium}"/></a>
+      <a href="${element.alt}"><img src="${element.images.medium}" referrerpolicy ="never"/></a>
     </div>
     <div>
       <h1>${element.title}</h1>
