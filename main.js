@@ -14,7 +14,7 @@ $(function(){
         $(".hot-parent-node").append(
 `<div class="hot col-lg-4 col-md-6">
     <div>
-      <a href="${element.alt}"><img src="${element.images.large}"/></a>
+      <a href="${element.alt}"><img src="${element.images.medium}"/></a>
     </div>
     <div>
       <h1>${element.title}</h1>
@@ -33,7 +33,8 @@ $(function(){
   })
 })
 // Top250
-var currentPage = currentPage || 1
+var pageList = [0,1,2,3,4]
+var currentPage = currentPage || pageList[0]
 function checkPage(){
   if(currentPage ===1){
     $(".pre").css("display","none")
@@ -53,7 +54,7 @@ function getMovies(){
         $(".top250-parent-node").append(
 `<div class="hot col-lg-4 col-md-6">
     <div>
-      <a href="${element.alt}"><img src="${element.images.large}"/></a>
+      <a href="${element.alt}"><img src="${element.images.medium}"/></a>
     </div>
     <div>
       <h1>${element.title}</h1>
