@@ -1,0 +1,57 @@
+/* 导航栏 */
+.navbar{
+  background-color: #00addc;
+  padding: 0
+}
+.navbar img{
+  max-width: 50px;
+  height:auto;
+  margin-right:20px;
+  vertical-align: middle;
+}
+.navbar span{
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+.navbar a,.navbar a:hover{
+  color: white;
+  font-size: 16px;
+  margin: 0 20px;
+}
+.nav-tabs{
+  border: none !important;
+}
+.nav-tabs .active{
+  color:white !important;
+  background-color: #89cff0 !important;
+  border: none !important;
+  border-radius: 5px;
+}
+/* 热影电影 */
+.hot{
+  margin: 20px 0px;
+}
+.hot img{
+  max-width: 100px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.hot div{
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  max-width: 150px;
+}
+.hot h1{
+  font-size: 16px;
+  font-weight: bolder;
+}
+.hot p{
+  margin:5px 0;
+  color: gray;
+  word-wrap:break-word;
+}
