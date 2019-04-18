@@ -1,0 +1,34 @@
+/* 导航栏 */
+.navbar{
+  background-color: #00addc;
+  padding: 0
+}
+.navbar img{
+  max-width: 30px;
+  height:auto;
+  margin-right:10px;
+  vertical-align: middle;
+}
+.navbar span{
+  font-size: 15px;
+  font-weight: bold;
+  color:white;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.navbar a,.navbar a:hover{
+  font-weight: bold;
+  margin-right: 25px;
+  float: right;
+  color: white;
+  font-size: 12px;
+}
+.nav-tabs{
+  border: none !important;
+}
+.nav-tabs .active{
+  color:white !important;
+  background-color: #00addc !important;
+  border: none !important;
+  border-radius: 5px;
+}

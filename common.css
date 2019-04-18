@@ -1,3 +1,31 @@
 *{margin: 0px;padding: 0}
+body{
+  background-color: #FAFAFA
+}
 ul,li{list-style: none;}
 a{text-decoration: none;}
+/* 热映电影 */
+.hot{
+  margin: 20px 0px;
+}
+.hot img{
+  max-width: 100px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.hot div{
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  max-width: 150px;
+}
+.hot h1{
+  font-size: 16px;
+  font-weight: bolder;
+}
+.hot p{
+  margin:5px 0;
+  color: gray;
+  word-wrap:break-word;
+}
