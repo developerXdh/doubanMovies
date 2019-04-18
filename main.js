@@ -7,7 +7,6 @@ $(function(){
       count:50
     },
     dataType:"jsonp",
-    jsonp: "callback",
     success:function(res){
       console.log(res)
       res.subjects.forEach(element => {
@@ -48,7 +47,6 @@ function getMovies(){
       count:12
     },
     dataType:"jsonp",
-    jsonp: "callback",
     success:function(res){
       res.subjects.forEach(element => {
         $(".top250-parent-node").append(
