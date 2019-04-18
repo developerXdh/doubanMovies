@@ -29,3 +29,28 @@ a{text-decoration: none;}
   color: gray;
   word-wrap:break-word;
 }
+/* Top250 */
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin: 20px 0;
+}
+.pagination ul{
+  margin: auto;
+  text-align: center;
+}
+.pagination li{
+  font-size: 14px;
+  display: inline-block;
+  margin: 0 2px;
+  background-color: #00addc;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 0;
+  width: 30px;
+  cursor: pointer;
+}
+.pagination .broader-page{
+  width: 50px;
+}
