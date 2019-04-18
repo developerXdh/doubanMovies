@@ -9,6 +9,7 @@ $(function(){
     dataType:"jsonp",
     jsonp: "callback",
     success:function(res){
+      console.log(res)
       res.subjects.forEach(element => {
         $(".hot-parent-node").append(
 `<div class="hot col-lg-4 col-md-6">
