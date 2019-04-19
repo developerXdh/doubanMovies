@@ -1,9 +1,9 @@
 // 热映电影
 $("#search").submit(function(event){
   event.preventDefault()
-  var movieName = $(this).val()
+  var movieName = $(".search").val()
   $.ajax({
-    url:"https://api.douban.com/v2/movie/in_theaters",
+    url:"https://api.douban.com/v2/movie/search",
     data:{
       q:movieName
     },
