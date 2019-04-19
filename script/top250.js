@@ -50,10 +50,10 @@ function getMovies(){
     dataType:"jsonp",
     contentType	:"application/json",
     success:function(res){
-      $(".hot").remove()
+      $(".top").remove()
       res.subjects.forEach(element => {
         $(".top250-parent-node").append(
-`<div class="hot col-lg-4 col-md-6">
+`<div class="top col-lg-4 col-md-6">
     <div>
       <a href="${element.alt}"><img src="${element.images.medium}" referrerpolicy ="never"/></a>
     </div>

@@ -21,9 +21,10 @@
 }
 .navbar a,.navbar a:hover{
   font-weight: bold;
+  margin-left: 10px;
   margin-right: 25px;
   color: white;
-  font-size: 15px;
+  font-size: 13px;
 }
 .nav-link{
   padding:0 !important;
