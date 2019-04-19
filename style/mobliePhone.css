@@ -16,19 +16,31 @@
   vertical-align: middle;
   margin-right: 15px;
 }
+.navbar-collapse{
+  overflow: hidden;
+}
 .navbar a,.navbar a:hover{
   font-weight: bold;
   margin-right: 25px;
-  float: right;
   color: white;
   font-size: 12px;
+}
+.nav-link{
+  padding:0 !important;
+  margin:0 !important;
+  border:0 !important;
 }
 .nav-tabs{
   border: none !important;
 }
-.nav-tabs .active{
+.navbar .nav-item,.navbar .active{
   color:white !important;
   background-color: #00addc !important;
-  border: none !important;
-  border-radius: 5px;
+  border:0 !important;
+  border-radius: 5px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.navbar .nav-item{
+  padding: 5px !important;
 }

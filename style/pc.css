@@ -1,0 +1,49 @@
+/* 导航栏 */
+*:hover{
+  border: 0 !important;
+}
+.navbar{
+  background-color: #00addc;
+  padding: 0
+}
+.navbar img{
+  max-width: 50px;
+  height:auto;
+  margin-right:20px;
+  vertical-align: middle;
+}
+.navbar span{
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+.navbar-collapse{
+  overflow: hidden;
+}
+.navbar a,.navbar a:hover{
+  font-weight: bold;
+  margin-right: 25px;
+  color: white;
+  font-size: 16px;
+}
+.nav-link{
+  padding:0 !important;
+  margin:0 !important;
+  border:0 !important;
+}
+.nav-tabs{
+  border: none !important;
+}
+.navbar .nav-item,.navbar .active{
+  color:white !important;
+  background-color: #00addc !important;
+  border:0 !important;
+  border-radius: 5px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.navbar .nav-item{
+  padding: 0 25px !important;
+}

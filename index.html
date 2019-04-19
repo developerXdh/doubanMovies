@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>豆瓣电影导航</title>
   <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link href="common.css" rel="stylesheet">
-  <link href="pc.css" media="(min-width: 768px)" rel="stylesheet">
-  <link href="mobliePhone.css" media="(max-width: 768px)" rel="stylesheet">
+  <link href="style/common.css" rel="stylesheet">
+  <link href="style/pc.css" media="(min-width: 768px)" rel="stylesheet">
+  <link href="style/mobliePhone.css" media="(max-width: 768px)" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-md">
@@ -20,22 +20,22 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="nav navbar-nav nav-tabs" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#hot-movies">正在热映</a>
+          <a class="nav-link" data-toggle="tab" href="#hot-movies">正在热映</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" data-toggle="tab" href="#top250">电影Top250</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#research-movies">电影搜索</a>
+          <a class="nav-link" data-toggle="tab" href="#search-movies">电影搜索</a>
         </li>    
       </ul>
     </div>
   </nav>
   <div class="tab-content">
-    <div id="hot-movies" class="container tab-pane active container">
+    <div id="hot-movies" class="tab-pane fade in active">
       <div class="hot-parent-node row"></div>
     </div>
-    <div id="top250" class="container tab-pane fade">
+    <div id="top250" class="tab-pane fade">
       <div class="top250-parent-node row"></div>
       <footer class="pagination">
         <ul>
@@ -50,10 +50,12 @@
         </ul>
       </footer>
     </div>
-    <div id="research-movies" class="container tab-pane fade">3</div>
+    <div id="search-movies" class="tab-pane fade">3</div>
   </div>
 </body>
   <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
+  <script src="script/hot.js"></script>
+  <script src="script/top250.js"></script>
+  <script src="script/search.js"></script>
 </html>
