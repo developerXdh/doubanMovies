@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="nav navbar-nav nav-tabs" role="tablist">
         <li class="nav-item active">
-          <a class="nav-link " data-toggle="tab" href="#hot-movies">正在热映</a>
+          <a class="nav-link " data-toggle="tab" href="#hot-movies">热映电影</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#top250">电影Top250</a>
@@ -32,10 +32,12 @@
     </div>
   </nav>
   <div class="tab-content">
-    <div id="hot-movies" class="tab-pane fade active container">
+    <div id="hot-movies" class="tab-pane active container">
+      <div class="section-title">热映电影</div>
       <div class="hot-parent-node row"></div>
     </div>
     <div id="top250" class="tab-pane fade container">
+      <div class="section-title">电影Top250</div>
       <div class="top250-parent-node row"></div>
       <footer class="pagination">
         <ul>
@@ -50,7 +52,16 @@
         </ul>
       </footer>
     </div>
-    <div id="search-movies" class="tab-pane fade container">3</div>
+    <div id="search-movies" class="tab-pane fade container">
+      <div class="section-title">电影搜索</div>
+      <div class="search-box">
+        <form id="search">
+          <input class="search" type="text" placeholder="请输入电影名称">
+          <input type="submit" value="搜索">
+        </form>
+      </div>
+      <div class="search-parent-node row"></div>
+    </div>
   </div>
 </body>
   <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>

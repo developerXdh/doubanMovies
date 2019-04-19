@@ -27,10 +27,13 @@ function checkPage(){
       pageNumber[i].textContent = [17,18,19,20,21][i]
     }
   }
-  pageNumber.each(function(){
-    $(".activePage").removeClass()
-    if(this.textContent == currentPage+1){
+  pageNumber.each(
+    function(){
+      if(this.textContent == currentPage+1){
         $(this).addClass("activePage")
+      }
+      else{
+        $(this).removeClass("activePage")
       }
     }
   )
