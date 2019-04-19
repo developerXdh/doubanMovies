@@ -1,22 +1,53 @@
 // Top250
-var pageList = [0,1,2,3,4]
-var currentPage = currentPage || pageList[0]
+var currentPage = currentPage || 0
+var pageList = pageList || [1,2,3,4,5]
 
+//检查上一页按钮和页数
 function checkPage(){
-  if(currentPage ===1){
+  if(currentPage === 0){
     $(".pre").css("display","none")
   }
+  else{
+    $(".pre").css("display","inline")
+  }
+  if(pageList[0] >= 16){
+    $(".next").css("display","none")
+  }
+  else{
+    $(".next").css("display","inline")
+  }
+  var pageNumber = $(".page-number")
+  if(pageList[0] <= 16){
+    for(let i = 0;i<pageNumber.length;i++){
+      pageNumber[i].textContent = pageList[i]
+    }
+  }
+  else{
+    for(let i = 0;i<pageNumber.length;i++){
+      pageNumber[i].textContent = [17,18,19,20,21][i]
+    }
+  }
+  pageNumber.each(function(){
+    $(".activePage").removeClass()
+    if(this.textContent == currentPage+1){
+        $(this).addClass("activePage")
+      }
+    }
+  )
 }
 
+//获取信息
 function getMovies(){
   $.ajax({
     url:"https://api.douban.com/v2/movie/top250",
     data:{
-      start:currentPage,
+      start:currentPage*12,
       count:12
     },
     dataType:"jsonp",
+    contentType	:"application/json",
     success:function(res){
+      $(".hot").remove()
       res.subjects.forEach(element => {
         $(".top250-parent-node").append(
 `<div class="hot col-lg-4 col-md-6">
@@ -39,11 +70,37 @@ function getMovies(){
     }
   })
 }
+
+//页面挂载事件
 $(function(){
   checkPage()
   getMovies()
 })
+//上一页
 $(".pre").click(function(){
-  currentPage -= 1
-
+  pageList = pageList.map(item => item-1)
+  currentPage = pageList[0]-1
+  checkPage()
+  getMovies()
+})
+//下一页
+$(".next").click(function(){
+  pageList = pageList.map(item => item+1)
+  currentPage = pageList[0]-1
+  checkPage()
+  getMovies()
+})
+//首页
+$(".first-page").click(function(){
+  pageList = [1,2,3,4,5]
+  currentPage = pageList[0]-1
+  checkPage()
+  getMovies()
+})
+//指定页
+$(".page-number").click(function(){
+  pageList = [this.textContent-0,this.textContent-0+1,this.textContent-0+2,this.textContent-0+3,this.textContent-0+4]
+  currentPage = pageList[0]-1
+  checkPage()
+  getMovies()
 })

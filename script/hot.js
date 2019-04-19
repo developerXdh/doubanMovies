@@ -2,13 +2,12 @@
 $(function(){
   $.ajax({
     url:"https://api.douban.com/v2/movie/in_theaters",
-    type:"get",
     data:{
       count:50
     },
     dataType:"jsonp",
+    contentType	:"application/json",
     success:function(res){
-      console.log(res)
       res.subjects.forEach(element => {
         $(".hot-parent-node").append(
 `<div class="hot col-lg-4 col-md-6">

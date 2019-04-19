@@ -19,10 +19,10 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="nav navbar-nav nav-tabs" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#hot-movies">正在热映</a>
-        </li>
         <li class="nav-item active">
+          <a class="nav-link " data-toggle="tab" href="#hot-movies">正在热映</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#top250">电影Top250</a>
         </li>
         <li class="nav-item">
@@ -32,25 +32,25 @@
     </div>
   </nav>
   <div class="tab-content">
-    <div id="hot-movies" class="tab-pane fade in active">
+    <div id="hot-movies" class="tab-pane fade active container">
       <div class="hot-parent-node row"></div>
     </div>
-    <div id="top250" class="tab-pane fade">
+    <div id="top250" class="tab-pane fade container">
       <div class="top250-parent-node row"></div>
       <footer class="pagination">
         <ul>
           <li class="first-page broader-page">首页</li>
           <li class="broader-page pre">上一页</li>
-          <li class="">1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+          <li class="page-number">1</li>
+          <li class="page-number">2</li>
+          <li class="page-number">3</li>
+          <li class="page-number">4</li>
+          <li class="page-number">5</li>
           <li class="broader-page next">下一页</li>
         </ul>
       </footer>
     </div>
-    <div id="search-movies" class="tab-pane fade">3</div>
+    <div id="search-movies" class="tab-pane fade container">3</div>
   </div>
 </body>
   <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>

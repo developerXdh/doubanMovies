@@ -49,8 +49,15 @@ a{text-decoration: none;}
   border-radius: 5px;
   padding: 2px 0;
   width: 30px;
+  height: 25px;
   cursor: pointer;
 }
 .pagination .broader-page{
   width: 50px;
+  padding: 2px 3px;
+}
+.activePage{
+  border:1px solid #00addc !important;
+  background-color: white !important;
+  color:#00addc !important
 }
