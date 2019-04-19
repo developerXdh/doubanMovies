@@ -1,6 +1,8 @@
 // 热映电影
 $("#search").submit(function(event){
+  $(".search-list").remove()
   event.preventDefault()
+  isloading = true
   var movieName = $(".search").val()
   $.ajax({
     url:"https://api.douban.com/v2/movie/search",
@@ -10,7 +12,7 @@ $("#search").submit(function(event){
     dataType:"jsonp",
     contentType	:"application/json",
     success:function(res){
-      $(".search-list").remove()
+      isloading = false
       res.subjects.forEach(element => {
         $(".search-parent-node").append(
 `<div class="search-list col-lg-4 col-md-6">

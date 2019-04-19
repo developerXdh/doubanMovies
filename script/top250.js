@@ -41,6 +41,8 @@ function checkPage(){
 
 //获取信息
 function getMovies(){
+  $(".top").remove()
+  isloading = true
   $.ajax({
     url:"https://api.douban.com/v2/movie/top250",
     data:{
@@ -50,7 +52,7 @@ function getMovies(){
     dataType:"jsonp",
     contentType	:"application/json",
     success:function(res){
-      $(".top").remove()
+      isloading = false
       res.subjects.forEach(element => {
         $(".top250-parent-node").append(
 `<div class="top col-lg-4 col-md-6">
