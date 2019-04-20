@@ -97,7 +97,7 @@ a{text-decoration: none;}
   50.9% {opacity: 1;top: 0px;}
   55.9% {opacity: 0;top: -10px;}
 }
-.loader{width: 150px;margin:20vh auto 0 auto}
+.loader{width: 80px;margin:20vh auto 0 auto}
 .loader::after{
   content: "";
   display: block;

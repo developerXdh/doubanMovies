@@ -8,6 +8,7 @@ $(function(){
     dataType:"jsonp",
     contentType	:"application/json",
     success:function(res){
+      isloading = false
       res.subjects.forEach(element => {
         $(".hot-parent-node").append(
 `<div class="hot col-lg-4 col-md-6">
